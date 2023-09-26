@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/business_website/static/css/main.f0e6343e.css",
+    "main.css": "/business_website/static/css/main.1076ce4d.css",
     "main.js": "/business_website/static/js/main.6a976aa7.js",
     "static/js/787.d3c19229.chunk.js": "/business_website/static/js/787.d3c19229.chunk.js",
     "static/media/contact.jpg": "/business_website/static/media/contact.a66df18e2f821cc6f477.jpg",
@@ -10,12 +10,12 @@
     "static/media/banner.png": "/business_website/static/media/banner.908f1105e63bdffa53c0.png",
     "static/media/layer.png": "/business_website/static/media/layer.6f099e109a8bd549cd14.png",
     "index.html": "/business_website/index.html",
-    "main.f0e6343e.css.map": "/business_website/static/css/main.f0e6343e.css.map",
+    "main.1076ce4d.css.map": "/business_website/static/css/main.1076ce4d.css.map",
     "main.6a976aa7.js.map": "/business_website/static/js/main.6a976aa7.js.map",
     "787.d3c19229.chunk.js.map": "/business_website/static/js/787.d3c19229.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0e6343e.css",
+    "static/css/main.1076ce4d.css",
     "static/js/main.6a976aa7.js"
   ]
 }
