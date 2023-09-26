@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+
+/*Google Poppins font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap');
+
+
+/*root variables */
+:root {
+ /* Background Color */
+ --primary-color: #990033;
+ --secondry-color: #ffc2b4;
+ --primary-nav-color: #e21056;
+ --primary-bg: rgb(153 0 51 / 14%);
+ --font-color: #b7b7b7;
+ --bg-color: #171717;
+ --bg-dark-color: #0c0b0b;
+ --white-color: #fdfffc;
+ --green-color: #0abf53;
+ --green-color-bg: rgb(10 191 83 / 17%);
+ --blue-color: #6168ff;
+ --blue-color-bg: rgb(97 104 255 / 9%);
+ --border-color-light: rgb(255, 255, 255, 0.2);
+ --box-shadow: 0 1rem 3rem rgb(0 0 0 / 12%);
+ --dark-layer-color: linear-gradient(to top, rgb(21 21 21 / 67%));
+
+
+
+  /* font family */
+  --primary-font: 'Poppins', sans-serif;
+} 
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  background: var(--bg-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*Custom Scrollbar */
+::-webkit-scrollbar {
+  width: .3281rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondry-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Pre-defined Classes CSS */
+
+a {
+  text-decoration: none;
+
+}
+
+.container-fluid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.container {
+  width: auto;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.btn_wrapper {
+  margin: 5rem  0 5rem;
+
+
+  
+}
+
+.btn_wrapper .btn {
+  padding:0.857rem 2.571rem;
+  font-size: 1.143rem;
+  color: var(--white-color);
+  border-radius: 2.143rem;
+  font-weight: 600px;
+  box-shadow: 0 0.5rem  1rem rgb(16,16,16);
+  outline: 2px solid var(--primary-color);
+  outline-offset: 0px;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  transition: all .3s ease-in-out;
+
+
+ }
+
+
+ .btn_wrapper .btn:hover {
+  outline-offset: .625rem;
+
+}
+
+
+h1 {
+  font-size: 3.875rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h2{
+  font-size: 2.875rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h3{
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h4{
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h5{
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+   margin-bottom: .9375rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+h6{
+  font-size: .875rem;
+  line-height: .9375rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--font-color);
+
+}
+
+
+/**Responsive css*/
+
+@media (max-width: 992px) {
+  .btn_wrapper {
+    width: 100%;
+    text-align: center;
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+@media (max-width: 767px) {
+  .btn_wrapper {
+    margin-bottom:3rem;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

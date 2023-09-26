@@ -1,0 +1,138 @@
+/*Blog*/
+
+#blog {
+    padding: 6rem 0 4rem;
+
+}
+
+#blog .blog_wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+    
+}
+
+#blog .blog_wrapper .blog_col{
+  width: calc(100% / 2 - 15px);
+  height: auto;
+  position: relative;
+  z-index: 1;
+ 
+     
+ }
+
+ #blog .blog_wrapper .blog_col h3{
+  width: 80%;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+   
+       
+   }
+
+#blog .blog_wrapper .blog_col p {
+  width: 80%;
+   margin: 0;
+   padding: 0;
+   font-size: 1rem;
+   line-height: 1.8rem;
+   color: var(--font-color);
+}
+
+#blog .blog_wrapper .blog_col .blog_image {
+   position: relative;
+   text-align: center;
+
+ }
+
+ #blog .blog_wrapper .blog_col .blog_image::after {
+   content: '';
+   position: absolute;
+   border: 10px solid var(--secondry-color);
+   right: 45px;
+   left: -45px;
+   bottom: 45px;
+   top: -45px;
+   z-index: -1;
+   border-radius: 0 2rem;
+
+   
+ }
+
+ #blog .blog_wrapper .blog_col .blog_image img {
+   border-radius: 0 2rem;
+   max-width: 100%;
+
+   
+ }
+
+
+
+
+/*Resposive css*/
+
+@media(max-width: 992px) {
+    /*blog*/
+    #blog .blog_wrapper{
+        flex-direction: column-reverse;
+     
+         
+     }
+
+     #blog .blog_wrapper .blog_col{
+        width: fit-content;
+        padding: 2rem;
+       
+       
+           
+       }
+
+       #blog .blog_wrapper .blog_col h3{
+        width: 100%;
+        text-align: center;
+     
+             
+         }
+
+         #blog .blog_wrapper .blog_col p {
+             width: 100%;
+             text-align: center;
+          }
+          
+
+
+}
+
+
+@media(max-width: 767px) {
+     /*blog*/
+
+     #blog .blog_wrapper .blog_col{
+        padding: 1.4rem;
+       
+       
+           
+       }
+
+       #blog .blog_wrapper .blog_col h3{
+        width: 100%;
+        font-size: 2.1rem;
+        line-height: 3.4rem;
+             
+         }
+
+         #blog .blog_wrapper .blog_col .blog_image::after {
+            left:0;
+         
+            
+          }
+
+          #blog .blog_wrapper .blog_col .blog_image img {
+            max-width: 85%;
+            
+          }
+
+       
+}

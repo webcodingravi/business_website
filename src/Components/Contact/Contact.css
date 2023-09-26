@@ -1,0 +1,129 @@
+/* Contact CSS */
+
+#contact {
+    padding: 3rem 0;
+}
+
+#contact .contact_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.8rem;
+    flex: wrap;
+}
+
+#contact .contact_wrapper .contact_col{
+  width: calc(100% / 2  - 1rem);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#contact .contact_wrapper .contact_col .input_wrapper{
+    width: 100%;
+    display: flex;
+  }
+
+  #contact .contact_wrapper .contact_col .input_wrapper .form-control{
+   width: 100%;
+   background-color: transparent;
+   border: .0714rem solid var(--white-color);
+   color: var(--white-color);
+   font-size: 1rem;
+   font-weight: 400;
+   padding: .7143rem 1.3rem;
+   border-radius: .5614rem;
+   margin-bottom: 2.8rem;
+  }
+
+  #contact .contact_wrapper .contact_col .input_wrapper textarea {
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: .0714rem solid var(--white-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .7143rem 1.3rem;
+    border-radius: .5614rem;
+    min-height: 7rem;
+  }
+
+
+  #contact .contact_wrapper .contact_col .input_wrapper .form-control:hover,
+  #contact .contact_wrapper .contact_col .input_wrapper textarea:hover,
+  #contact .contact_wrapper .contact_col .input_wrapper .form-control:focus, 
+  #contact .contact_wrapper .contact_col .input_wrapper textarea:focus
+  {
+     border-color: var(--primary-color);
+     color: var(--white-color);
+   }
+
+
+   #contact .contact_wrapper .contact_col .btn_wrapper{
+    margin-top: 1.8rem;
+
+    
+   }
+
+   #contact .contact_wrapper .contact_col .contact_image{
+   position: relative;
+    
+    
+   }
+
+   #contact .contact_wrapper .contact_col .contact_image::after{
+     overflow: hidden;
+     content: url('../../assets/about/layer_2.png');
+     z-index:1;
+     position: absolute;
+     top: -70px;
+     right: -20px;
+     max-width: 100%;
+
+     
+     
+    }
+
+    #contact .contact_wrapper .contact_col .contact_image img{
+    border-radius: 2rem;
+    position:relative;
+    z-index:2;
+    max-width: 85%;
+   
+  }
+
+
+
+
+/*Resposive css */
+
+@media(max-width: 1024px) {
+    #contact .contact_wrapper .contact_col .contact_image::after{
+       right: 0;
+
+        
+       }
+   
+}
+
+@media (max-width: 992px) {
+    #contact .contact_wrapper{
+       justify-content: center;
+    }
+
+    #contact .contact_wrapper .contact_col{
+       width: 50%;
+      }
+      
+}
+
+@media (max-width: 767px) {
+    #contact .contact_wrapper{
+       flex-direction: column;
+    }
+
+
+    #contact .contact_wrapper .contact_col{
+        width: 100%;
+      }
+      
+}

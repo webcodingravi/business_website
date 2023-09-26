@@ -1,0 +1,151 @@
+#site_header {
+    background-color: var(--bg-color);
+    padding:0.500rem 0 1rem;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+
+    
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    background:var(--bg-color);
+    padding:0.500rem 0 1rem;
+    transform:translateY(0px);
+    transition:all 0.3s ease-in-out;
+    animation:navbarScroll 0.3s linear forwards;
+
+}
+
+
+@keyframes navbarScroll {
+    0%, 100% {
+        transform: translateY(0px);
+
+    }
+    50% {
+        transform: translateY(-100);
+    }
+} 
+
+
+
+
+
+
+#site_header .navbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+#site_header .navbar_brand img {
+    max-width: 80%;
+
+ 
+}
+
+#site_header .navbar_toggler {
+    display: none;
+
+
+}
+
+
+#site_header .navbar_toggler svg{
+    line-height: 2.8571rem;
+    margin-right: 1.0714rem;
+    text-align: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius : 50%;
+
+}
+
+#site_header .navbar_toggler svg path {
+    fill:var(--white-color);
+}
+
+#site_header .menu_Items ul{
+   margin: 0;
+   padding: 0;
+}
+
+#site_header .menu_Items ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 0 1rem;
+
+   
+ }
+
+ #site_header .menu_Items ul li a {
+    padding: 0.670rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-color);
+    cursor: pointer;
+ }
+
+ #site_header .menu_Items ul li a.active,
+ #site_header .menu_Items ul li a:hover,
+ #site_header .menu_Items ul li a:focus
+ {
+    color: var(--primary-nav-color);
+ }
+
+
+
+
+
+/***Responsive css */
+
+@media (max-width: 992px) {
+
+    /**Navbar */
+    #site_header .navbar_toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    #site_header .menu_Items{
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         background: var(--bg-color);
+         z-index: 9999;
+         transform: translateX(-250px);
+         transition: all 0.5s ease-in-out;
+     }
+
+     #site_header .menu_Items.active{
+        max-width: 250px;
+        min-width: 250px;
+        padding: 2rem;
+        box-sizing: border-box;
+        transform: translateX(0);
+    }
+
+
+    #site_header .menu_Items ul li{
+       display: block;
+       border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    #site_header .menu_Items ul li a{
+         padding: 1rem 0;
+         display: block;
+     }
+
+  
+}
+
+/*****end Responsive css */
