@@ -83,6 +83,7 @@
   #home .sub_banner_image {
     background-color: var(--secondry-color);
     border-radius: 0 2.625rem;
+   
   }
 
   #home .sub_banner_image img{
@@ -90,6 +91,7 @@
     margin-top: -2rem;
     margin-left: -2rem;
     max-width: 100%;
+ 
   }
 
   #home .banner_style_1 {
